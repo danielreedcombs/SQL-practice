@@ -93,3 +93,16 @@ SELECT DISTINCT building_name, role
 FROM buildings
   LEFT JOIN employees
     ON building_name = building;
+
+-- chapter 8
+
+SELECT name, role FROM employees
+WHERE building IS NULL;
+
+SELECT DISTINCT building_name
+FROM buildings
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
+
+-- chapter 9
